@@ -15,16 +15,28 @@ JiraGitFluence is a command-line tool that aggregates data from Jira and GitHub,
 
 ## Installation
 
-```bash
-# Clone the repository
-git clone https://github.com/krzko/jiragitfluence.git
-cd jiragitfluence
+Installing `jiragitfluence` is possible via several methods. It can be insatlled via `brew`, an binary downloaded from GitHub [Releases](https://github.com/krzko/jiragitfluence/releases), or running it as a distroless multi-arch docker image.
 
-# Install dependencies
-make install
+### brew
 
-# Build the application
-make build
+Install [brew](https://brew.sh/) and then run:
+
+```sh
+brew install krzko/tap/jiragitfluence
+```
+
+### Download Binary
+
+Download the latest version from the [Releases](https://github.com/krzko/jiragitfluence/releases) page.
+
+### Docker
+
+To see all the tags view the [Packages](https://github.com/krzko/jiragitfluence/pkgs/container/jiragitfluence) page.
+
+Run the container via the following command:
+
+```sh
+docker run --rm ghcr.io/krzko/jiragitfluence:latest -h
 ```
 
 ## Configuration
