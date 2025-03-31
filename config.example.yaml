@@ -1,0 +1,38 @@
+# JiraGitFluence Configuration Example
+# This file contains configuration settings for connecting to Jira, GitHub, and Confluence
+# You can also use environment variables to override these settings:
+# - JIRA_URL, JIRA_USERNAME, JIRA_API_TOKEN
+# - GITHUB_TOKEN
+# - CONFLUENCE_URL, CONFLUENCE_USERNAME, CONFLUENCE_API_TOKEN
+
+# Jira API Configuration
+jira:
+  # URL of your Jira instance (e.g., https://your-company.atlassian.net)
+  url: "https://your-company.atlassian.net"
+  
+  # Jira username (typically your email address)
+  username: "your-email@example.com"
+  
+  # Jira API token
+  # Generate from: https://id.atlassian.com/manage-profile/security/api-tokens
+  api_token: "your-jira-api-token"
+
+# GitHub API Configuration
+github:
+  # GitHub Personal Access Token (PAT)
+  # Generate from: https://github.com/settings/tokens
+  # Required scopes: repo (for private repos), public_repo (for public repos)
+  token: "your-github-personal-access-token"
+
+# Confluence API Configuration
+confluence:
+  # URL of your Confluence instance (e.g., https://your-company.atlassian.net/wiki)
+  url: "https://your-company.atlassian.net/wiki"
+  
+  # Confluence username (typically your email address)
+  username: "your-email@example.com"
+  
+  # Confluence API token
+  # Generate from: https://id.atlassian.com/manage-profile/security/api-tokens
+  # This is the same token used for Jira if both are on the same Atlassian account
+  api_token: "your-confluence-api-token"
