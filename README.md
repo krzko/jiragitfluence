@@ -1,4 +1,4 @@
-# JiraGitFluence Usage Guide
+# JiraGitFluence
 
 JiraGitFluence is a command-line tool that aggregates data from Jira and GitHub, generates structured reports, and publishes them to Confluence. This document provides detailed usage instructions and examples.
 

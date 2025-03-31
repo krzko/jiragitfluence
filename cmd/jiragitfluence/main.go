@@ -10,12 +10,26 @@ import (
 	"github.com/urfave/cli/v2"
 )
 
+// Build information. Populated at build-time using -ldflags:
+//
+//	go build -ldflags "-X main.version=1.0.0 -X main.commit=abc123 -X main.date=2025-04-01"
+var (
+	version = "dev"
+	commit  = "none"
+	date    = "unknown"
+)
+
 // Run executes the CLI application
 func Run() error {
+	// Set custom version printer that includes commit and build date
+	cli.VersionPrinter = func(c *cli.Context) {
+		fmt.Printf("jiragitfluence version: %s commit: %s built: %s\n", version, commit, date)
+	}
+
 	app := &cli.App{
 		Name:        "jiragitfluence",
 		Usage:       "Sync data between Jira, GitHub, and Confluence",
-		Version:     "0.1.0",
+		Version:     version,
 		Compiled:    time.Now(),
 		Description: "A tool to aggregate data from Jira and GitHub and publish it to Confluence",
 		Authors: []*cli.Author{
