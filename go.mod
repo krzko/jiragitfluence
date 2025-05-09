@@ -6,7 +6,7 @@ require (
 	github.com/andygrunwald/go-jira v1.16.0
 	github.com/google/go-github/v60 v60.0.0
 	github.com/urfave/cli/v2 v2.27.6
-	github.com/virtomize/confluence-go-api v1.5.0
+	github.com/virtomize/confluence-go-api v1.5.1
 	golang.org/x/oauth2 v0.30.0
 	gopkg.in/yaml.v3 v3.0.1
 )
