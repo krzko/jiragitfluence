@@ -3,7 +3,7 @@ module github.com/krzko/jiragitfluence
 go 1.24.1
 
 require (
-	github.com/andygrunwald/go-jira v1.16.0
+	github.com/andygrunwald/go-jira v1.16.1
 	github.com/google/go-github/v60 v60.0.0
 	github.com/urfave/cli/v2 v2.27.6
 	github.com/virtomize/confluence-go-api v1.5.0
